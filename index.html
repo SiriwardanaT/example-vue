@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3.2.1"></script>
+    <title>Document</title>
+</head>
+<body>
+   
+      <div id="app">
+       
+             
+            <table border="2">
+                <tr>
+                    <th>Itemname</th>
+                    <th>qun</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr v-for="item in items">
+                    <td>{{item.itemname}}</td>
+                    <td>{{item.qun}}</td> 
+                    <td><button v-on:click="increaseQuntity(item.id)">+</button></td>
+                   
+                </tr>
+                
+          
+
+            </table>
+          
+           
+            
+
+
+            
+            <div class="box" @mouseover = "eventhadler($event,5)">
+                <h1>box1</h1>
+            </div>
+
+            <div>
+                <h1>box2</h1>
+            </div>
+
+            <div >
+                <h1>box3</h1>
+            </div>
+        
+      </div>
+    
+
+    <script src="first.js"></script>
+   
+  
+</body>
+</html>
