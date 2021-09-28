@@ -35,11 +35,11 @@ const app = Vue.createApp({
                  }
              }))    
         },
-        eventhadler(e,data){
+        eventhadler(e,data1){
             console.log(e.type)
             
-            if(data){
-                 console.log(data)
+            if(data1){
+                 console.log(data1)
             }
         }
         
