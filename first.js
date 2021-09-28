@@ -39,7 +39,7 @@ const app = Vue.createApp({
             console.log(e.type)
             
             if(data){
-                console.log(data)
+                 console.log(data)
             }
         }
         
